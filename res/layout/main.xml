@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#882244">
+	<TextView
+		android:id="@+id/tv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="SUDOKU"
+		android:textSize="40sp" />
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#EEEEBB" />
+	<RelativeLayout
+		android:padding="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<com.foo.views.TwoDScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TableLayout
+				android:layout_centerInParent="true"
+				android:background="@android:color/white"
+				android:id="@+id/game_board"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</com.foo.views.TwoDScrollView>
+	</RelativeLayout>
+</LinearLayout>
